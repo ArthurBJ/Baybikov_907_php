@@ -17,6 +17,9 @@ $output_string = "";
             } elseif ($ch == "e") {
                 $ch = 3;
                 $count++;
+            } elseif($ch == "o") {
+                $ch = 0;
+                $count++;
             }
             yield $ch;
         }
