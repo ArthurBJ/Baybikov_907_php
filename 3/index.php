@@ -13,7 +13,6 @@
         }
 
         $fullArr = array_merge($stringArr, $shuffleArr);
-
         function cmp($a, $b) {
             return ($a[1] < $b[1]) ? -1 : 1;
         }
