@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>HW9</title>
+</head>
+<body>
+<form action="index.php" method="post">
+    <input type="text" name="text" placeholder="input text">
+    <br><br>
+    <label>Choose logger:</label>
+    <input type="radio" name="logger" value="logToFile">Записать в файл
+    <input type="radio" name="logger" value="logToBrowser">Вывести в браузер
+    <br><br>
+
+    <label for="filename">File name:</label>
+    <input name="filename" id="filename"/><p>
+
+    <p><input type="radio" name="typeofdata" value="time">time</p>
+    <p><input type="radio" name="typeofdata" value="dateAndTime">date and time</p>
+    <p><input type="radio" name="typeofdata" value="off">off</p>
+
+    <input type="submit" name="send" value="Send">
+</form>
+</body>
+</html>
