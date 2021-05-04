@@ -13,40 +13,32 @@ $exc = new MethodClass();
 
 try {
     $exc->exc1();
-}
-catch (Exception_1 $testFirst) {
-    echo 'First Exception';
-}
-catch (Exception_2 $testSecond) {
+} catch (Exception_2 $testSecond) {
     echo 'Second Exception';
+} catch (Exception_1 $testFirst) {
+    echo 'First Exception';
 }
 
 try {
     $exc->exc2();
-}
-catch (Exception_2 $testSecond) {
-    echo 'Second Exception';
-}
-catch (Exception_3 $testThird) {
+} catch (Exception_3 $testThird) {
     echo 'Third Exception';
+} catch (Exception_2 $testSecond) {
+    echo 'Second Exception';
 }
 
 try {
     $exc->exc3();
-}
-catch (Exception_3 $testThird) {
-    echo 'Third Exception';
-}
-catch (Exception_4 $testFourth) {
+} catch (Exception_4 $testFourth) {
     echo 'Fourth Exception';
+} catch (Exception_3 $testThird) {
+    echo 'Third Exception';
 }
 
 try {
     $exc->exc4();
-}
-catch (Exception_4 $testFourth) {
-    echo 'Fourth Exception';
-}
-catch (Exception_5 $testFifth) {
+} catch (Exception_5 $testFifth) {
     echo 'Fifth Exception';
+} catch (Exception_4 $testFourth) {
+    echo 'Fourth Exception';
 }
